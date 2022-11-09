@@ -54,6 +54,8 @@ app.get('/user', (req, res) => {
     console.log(req.headers.cookie);
 
     console.log(req.session);
+  } else {
+    res.send('you are not authorized. Please login first.');
   }
 });
 
